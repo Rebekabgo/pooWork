@@ -26,115 +26,180 @@ public class Interface extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        label1 = new java.awt.Label();
-        jPanel1 = new javax.swing.JPanel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jPanel3 = new javax.swing.JPanel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
-
-        label1.setText("label1");
+        BackGround = new javax.swing.JPanel();
+        NomeAluno = new javax.swing.JTextField();
+        matricula = new javax.swing.JTextField();
+        Topo = new javax.swing.JPanel();
+        GerarMatricula = new javax.swing.JButton();
+        DataNasc = new com.toedter.calendar.JDateChooser();
+        IdadeAuto = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        MenuBar = new javax.swing.JMenuBar();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        BackGround.setBackground(new java.awt.Color(255, 255, 255));
+        BackGround.setBorder(javax.swing.BorderFactory.createBevelBorder(null, null, java.awt.Color.lightGray, null, null));
+        BackGround.setEnabled(false);
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.setActionCommand("<Not Set>");
-        jTextField2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Nome:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        NomeAluno.setActionCommand("<Not Set>");
+        NomeAluno.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(null), null));
+        NomeAluno.setRequestFocusEnabled(false);
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField3.setActionCommand("<Not Set>");
-        jTextField3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Matricula:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        matricula.setActionCommand("<Not Set>");
+        matricula.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(null), null));
+        matricula.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matricula.setSelectedTextColor(new java.awt.Color(0, 0, 0));
+        matricula.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                matriculaActionPerformed(evt);
             }
         });
 
-        jPanel3.setBackground(new java.awt.Color(0, 153, 255));
+        Topo.setBackground(new java.awt.Color(0, 153, 255));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout TopoLayout = new javax.swing.GroupLayout(Topo);
+        Topo.setLayout(TopoLayout);
+        TopoLayout.setHorizontalGroup(
+            TopoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 83, Short.MAX_VALUE)
+        TopoLayout.setVerticalGroup(
+            TopoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 25, Short.MAX_VALUE)
         );
 
-        jFormattedTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jFormattedTextField1.setText("jFormattedTextField1");
-
-        jFormattedTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jFormattedTextField2.setText("jFormattedTextField1");
-        jFormattedTextField2.addActionListener(new java.awt.event.ActionListener() {
+        GerarMatricula.setBackground(new java.awt.Color(153, 204, 255));
+        GerarMatricula.setText("Gerar Matricula");
+        GerarMatricula.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField2ActionPerformed(evt);
+                GerarMatriculaActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(192, 192, 192)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(263, Short.MAX_VALUE))
+        DataNasc.setBackground(new java.awt.Color(255, 255, 255));
+        DataNasc.setForeground(new java.awt.Color(255, 255, 255));
+        DataNasc.setOpaque(false);
+
+        IdadeAuto.setActionCommand("<Not Set>");
+        IdadeAuto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(null), null));
+        IdadeAuto.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        IdadeAuto.setSelectedTextColor(new java.awt.Color(0, 0, 0));
+        IdadeAuto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IdadeAutoActionPerformed(evt);
+            }
+        });
+
+        jTextField1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, null, null));
+        jTextField1.setFocusable(false);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout BackGroundLayout = new javax.swing.GroupLayout(BackGround);
+        BackGround.setLayout(BackGroundLayout);
+        BackGroundLayout.setHorizontalGroup(
+            BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Topo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(BackGroundLayout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addGroup(BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(NomeAluno, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, BackGroundLayout.createSequentialGroup()
+                            .addComponent(matricula, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(GerarMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, BackGroundLayout.createSequentialGroup()
+                            .addComponent(DataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(IdadeAuto)))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(160, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(83, 83, 83)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(321, Short.MAX_VALUE))
+        BackGroundLayout.setVerticalGroup(
+            BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(BackGroundLayout.createSequentialGroup()
+                .addComponent(Topo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47)
+                .addGroup(BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(matricula, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(GerarMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NomeAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(BackGroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(IdadeAuto, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(195, Short.MAX_VALUE))
         );
+
+        MenuBar.setForeground(new java.awt.Color(0, 102, 255));
+
+        jMenu5.setText("Cadastro");
+        MenuBar.add(jMenu5);
+
+        jMenu6.setText("Edit");
+        MenuBar.add(jMenu6);
+
+        jMenu1.setText("jMenu1");
+        MenuBar.add(jMenu1);
+
+        jMenu2.setText("jMenu2");
+        MenuBar.add(jMenu2);
+
+        setJMenuBar(MenuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(BackGround, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(BackGround, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jFormattedTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFormattedTextField2ActionPerformed
+    private void GerarMatriculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GerarMatriculaActionPerformed
+        String matriculaGerada;
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+        do {
+            matriculaGerada = String.format("%010d", (long)(Math.random() * 1_000_000_0000L));
+        } while (!isMatriculaUnica(matriculaGerada));
 
+        matricula.setText(matriculaGerada);
+    }//GEN-LAST:event_GerarMatriculaActionPerformed
+
+    private void matriculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_matriculaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_matriculaActionPerformed
+
+    private void IdadeAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IdadeAutoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_IdadeAutoActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+
+    
+   private boolean isMatriculaUnica(String matricula){
+       return true;
+   }
     /**
      * @param args the command line arguments
      */
@@ -171,12 +236,18 @@ public class Interface extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JFormattedTextField jFormattedTextField1;
-    private javax.swing.JFormattedTextField jFormattedTextField2;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private java.awt.Label label1;
+    private javax.swing.JPanel BackGround;
+    private com.toedter.calendar.JDateChooser DataNasc;
+    private javax.swing.JButton GerarMatricula;
+    private javax.swing.JTextField IdadeAuto;
+    private javax.swing.JMenuBar MenuBar;
+    private javax.swing.JTextField NomeAluno;
+    private javax.swing.JPanel Topo;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField matricula;
     // End of variables declaration//GEN-END:variables
 }
